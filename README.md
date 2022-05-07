@@ -12,7 +12,7 @@ The chat system is fault tolerant, replicated data, is available (CAP Theorem).
     - python3 client.js
 
 #### What happens when we run server.js?
-Ans. 
+##### Ans -
     - server creates a socket
     - Sends receive request to every member of multicast group(To check if there exist another server in the system)
     - If receives an request
@@ -28,7 +28,7 @@ Ans.
             - It makes itself as leader and send messages to others.
 
 #### What happens when we run client.js?
-Ans. 
+##### Ans. 
     - It sends JOIN request to multicast group
         - If response received from leader, joins the group and wait for any message or sends message.
         - Else ends the session. 
